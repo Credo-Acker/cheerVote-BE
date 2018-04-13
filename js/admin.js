@@ -35,7 +35,7 @@ window.onload = function () {
     let kind = 1;
     let role = getCookie('role');
     let exist = document.querySelector('#exist');
-    let myurl = "https://wx.yyeke.com/cheer_vote/";
+    let myurl = "https://wx.yyeke.com/cheer_vote";
 
     //获取学院的信息
     ajax({      
