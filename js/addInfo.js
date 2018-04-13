@@ -12,9 +12,7 @@ window.onload = function () {
         "传媒艺术学院",
         "外国语学院",
         "国际学院",
-        "网络空间安全与信息法学院",
-        "马克思学院",
-        "体育学院"
+        "网络空间安全与信息法学院"
     ];
     let classId;
     classId = UrlSearch();
@@ -42,7 +40,7 @@ window.onload = function () {
     let girlName = document.querySelector('#girlName');
     let girlInfo = document.querySelector('#girlInfo');
     let close = document.querySelector('.close');
-    let myurl = "";
+    let myurl = "http://fyxmg4.natappfree.cc";
 
     for (let i = 0; i < academy.length; i++) {
         if ((classId - 1) == i) {
@@ -172,7 +170,6 @@ window.onload = function () {
         xhr.withCredentials = true;
 
         xhr.open("post", myurl + '/vote/admin/cheer_info', true);
-        //http://evchq8.natappfree.cc/
 
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {

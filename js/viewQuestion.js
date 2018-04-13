@@ -6,7 +6,7 @@ window.onload = function () {
     let submit = document.querySelector('#submit');
     kind = UrlSearch();
     let sessionId = getCookie('sessionId');
-    let myurl = "";
+    let myurl = "http://fyxmg4.natappfree.cc";
 
     //星级
     switch (kind) {

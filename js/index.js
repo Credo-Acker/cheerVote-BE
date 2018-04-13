@@ -1,6 +1,6 @@
 window.onload = function () {
     let login = document.querySelector('.login');
-    let myurl = "";
+    let myurl = "http://fyxmg4.natappfree.cc";
 
     login.addEventListener('click', function (e) {
         let user = document.querySelector('#username').value;

@@ -12,9 +12,7 @@ window.onload = function () {
         "10": "传媒艺术学院",
         "11": "外国语学院",
         "12": "国际学院",
-        "13": "网络空间安全与信息法学院",
-        "14": "马克思学院",
-        "15": "体育学院",
+        "13": "网络空间安全与信息法学院"
     }
     let xinxi = document.querySelector('#xinxi');
     let timu = document.querySelector('#timu');
@@ -37,7 +35,7 @@ window.onload = function () {
     let kind = 1;
     let role = getCookie('role');
     let exist = document.querySelector('#exist');
-    let myurl = "";
+    let myurl = "http://fyxmg4.natappfree.cc";
 
     //获取学院的信息
     ajax({      
