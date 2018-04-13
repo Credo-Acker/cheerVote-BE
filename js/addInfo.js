@@ -40,7 +40,7 @@ window.onload = function () {
     let girlName = document.querySelector('#girlName');
     let girlInfo = document.querySelector('#girlInfo');
     let close = document.querySelector('.close');
-    let myurl = "http://fyxmg4.natappfree.cc";
+    let myurl = "https://wx.yyeke.com/cheer_vote/";
 
     for (let i = 0; i < academy.length; i++) {
         if ((classId - 1) == i) {

@@ -1,6 +1,6 @@
 window.onload = function () {
     let login = document.querySelector('.login');
-    let myurl = "http://fyxmg4.natappfree.cc";
+    let myurl = "https://wx.yyeke.com/cheer_vote/";
 
     login.addEventListener('click', function (e) {
         let user = document.querySelector('#username').value;
