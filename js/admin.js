@@ -43,7 +43,7 @@ window.onload = function () {
         method: "GET",
         success: function (json) {
             let data = JSON.parse(json);
-            for (var i = 0; i < data.length; i++) {
+            for (let i = 0; i < data.length; i++) {
                 let ul = document.querySelector('.ul-xinxi');
                 let name = academy[i + 1];
                 let li = document.createElement("li");
@@ -74,9 +74,10 @@ window.onload = function () {
             success: function (json) {
                 let data = JSON.parse(json);
                 let num = document.querySelectorAll('.num');
-                for (var i = 0; i < data.length; i++) {
-                    num[i].innerHTML = data[i].total + "题"; 
-                    let kind = i + 1;
+                for (let i = 0; i < data.length; i++) {
+                    let j = data[i].kind;
+                    num[j-1].innerHTML = data[i].total + "题"; 
+                    let kind = data[i].kind;
                     if (role == 1) {
                         num[i].addEventListener('click', function () {
                             window.location.href = "./viewQuestion.html?kind=" + kind;
@@ -109,7 +110,7 @@ window.onload = function () {
             success: function (json) {
                 let data = JSON.parse(json);
 
-                for (var i = 0; i < data.length; i++) {
+                for (let i = 0; i < data.length; i++) {
                     let span = document.querySelectorAll('.span-xinxi');
                     let classId = data[i].classId;
                     if (data[i].result) {
@@ -230,9 +231,10 @@ window.onload = function () {
                         success: function (json) {
                             let data = JSON.parse(json);
                             let num = document.querySelectorAll('.num');
-                            for (var i = 0; i < data.length; i++) {
-                                num[i].innerHTML = data[i].total + "题"; 
-                                let kind = i + 1;
+                            for (let i = 0; i < data.length; i++) {
+                                let j = data[i].kind;
+                                num[j-1].innerHTML = data[i].total + "题"; 
+                                let kind = data[i].kind;
                                 if (role == 1) {
                                     num[i].addEventListener('click', function () {
                                         window.location.href = "./viewQuestion.html?kind=" + kind;
@@ -256,7 +258,7 @@ window.onload = function () {
                         success: function (json) {
                             let data = JSON.parse(json);
                             let num = document.querySelectorAll('.num');
-                            for (var i = 0; i < data.length; i++) {
+                            for (let i = 0; i < data.length; i++) {
                                 num[i].innerHTML = data[i].total + "题"; 
                                 let kind = i + 1;
                                 if (role == 1) {
@@ -288,7 +290,7 @@ window.onload = function () {
     });
 
     function getCookie(Name) {  
-        var search = Name + "=" ; 
+        let search = Name + "=" ; 
         if (document.cookie.length > 0) {
             offset = document.cookie.indexOf(search);
             if (offset != -1) {  
