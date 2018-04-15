@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 window.onload = function () {
     let academy = {
         "1": "通信与信息工程学院",
