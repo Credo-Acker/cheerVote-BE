@@ -5,7 +5,6 @@ window.onload = function () {
     let search = document.querySelector('#search');
     let submit = document.querySelector('#submit');
     kind = UrlSearch();
-    let sessionId = getCookie('sessionId');
     let myurl = "https://wx.yyeke.com/cheer_vote";
 
     //星级

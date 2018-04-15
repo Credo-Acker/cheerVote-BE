@@ -79,19 +79,10 @@ window.onload = function () {
                     num[j-1].innerHTML = data[i].total + "题"; 
                     let kind = data[i].kind;
                     if (role == 1) {
-                        num[i].addEventListener('click', function () {
+                        num[j-1].addEventListener('click', function () {
                             window.location.href = "./viewQuestion.html?kind=" + kind;
                         });
                     }
-                }
-                for (let i = 0; i < num.length; i++) {
-                    num[i].addEventListener('click', function () {
-                        let kind = i + 1;
-                        let data = {
-                            sessionId: sessionId,
-                            kind: kind
-                        };
-                    });
                 }
             }
         });
@@ -245,33 +236,6 @@ window.onload = function () {
                                 num[i].addEventListener('click', function () {
                                     let kind = i + 1;
                                     let data = {
-                                        sessionId: sessionId,
-                                        kind: kind
-                                    };
-                                });
-                            }
-                        }
-                    });
-                    ajax({
-                        url: myurl + "/vote/admin/question_num",    //替换为vote/admin/question_num
-                        method: "get",
-                        success: function (json) {
-                            let data = JSON.parse(json);
-                            let num = document.querySelectorAll('.num');
-                            for (let i = 0; i < data.length; i++) {
-                                num[i].innerHTML = data[i].total + "题"; 
-                                let kind = i + 1;
-                                if (role == 1) {
-                                    num[i].addEventListener('click', function () {
-                                        window.location.href = "./viewQuestion.html?kind=" + kind;
-                                    });
-                                }
-                            }
-                            for (let i = 0; i < num.length; i++) {
-                                num[i].addEventListener('click', function () {
-                                    let kind = i + 1;
-                                    let data = {
-                                        sessionId: sessionId,
                                         kind: kind
                                     };
                                 });
