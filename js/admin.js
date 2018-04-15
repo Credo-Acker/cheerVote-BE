@@ -88,6 +88,7 @@ window.onload = function () {
                     num[i].addEventListener('click', function () {
                         let kind = i + 1;
                         let data = {
+                            sessionId: sessionId,
                             kind: kind
                         };
                     });
@@ -244,7 +245,6 @@ window.onload = function () {
                                 num[i].addEventListener('click', function () {
                                     let kind = i + 1;
                                     let data = {
-                                        sessionId: sessionId,
                                         kind: kind
                                     };
                                 });
