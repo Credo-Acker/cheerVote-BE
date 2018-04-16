@@ -193,7 +193,7 @@ window.onload = function () {
 
         //上传下半部分
         let xhr = new XMLHttpRequest();
-        // xhr.withCredentials = true;
+        xhr.withCredentials = true;
 
         xhr.open("post", myurl + '/vote/admin/cheer_player', true);
 
