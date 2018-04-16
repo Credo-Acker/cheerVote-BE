@@ -266,9 +266,4 @@ window.onload = function () {
             else return ""; 
         }  
     }
-<<<<<<< HEAD
-
 }
-=======
-}
->>>>>>> defb9ca3b9f7149363562c3a9074d76ad8f46d87
