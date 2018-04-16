@@ -40,7 +40,7 @@ window.onload = function () {
     let girlName = document.querySelector('#girlName');
     let girlInfo = document.querySelector('#girlInfo');
     let close = document.querySelector('.close');
-    let myurl = "https://wx.yyeke.com/cheer_vote";
+    let myurl = ""; //https://wx.yyeke.com/cheer_vote
 
     for (let i = 0; i < academy.length; i++) {
         if ((classId - 1) == i) {
@@ -193,13 +193,13 @@ window.onload = function () {
 
         //上传下半部分
         let xhr = new XMLHttpRequest();
-        xhr.withCredentials = true;
+        // xhr.withCredentials = true;
 
         xhr.open("post", myurl + '/vote/admin/cheer_player', true);
 
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
-                girlImg.outerHTML = girlImg.outerHTML;
+                girlImg.value = '';
                 girlName.value = "";
                 girlInfo.value = "";
                 girlsImg1.src = "../images/tu.png";

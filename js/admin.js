@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 window.onload = function () {
     let academy = {
         "1": "通信与信息工程学院",
@@ -228,10 +227,18 @@ window.onload = function () {
                                 num[j-1].innerHTML = data[i].total + "题"; 
                                 let kind = data[i].kind;
                                 if (role == 1) {
-                                    num[j-1].addEventListener('click', function () {
+                                    num[i].addEventListener('click', function () {
                                         window.location.href = "./viewQuestion.html?kind=" + kind;
                                     });
                                 }
+                            }
+                            for (let i = 0; i < num.length; i++) {
+                                num[i].addEventListener('click', function () {
+                                    let kind = i + 1;
+                                    let data = {
+                                        kind: kind
+                                    };
+                                });
                             }
                         }
                     });
@@ -259,4 +266,5 @@ window.onload = function () {
             else return ""; 
         }  
     }
+
 }
